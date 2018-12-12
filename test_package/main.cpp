@@ -3,6 +3,8 @@
 //  The Boost Software License 1.0
 //
 
+#include <iostream>
+
 #include <httplib/httplib.h>
 
 using namespace httplib;
@@ -15,5 +17,9 @@ int main(void)
         res.set_content("Hello World!", "text/plain");
     });
 
-    svr.listen("localhost", 1234);
+    std::cout << "Test OK!" << std::endl;
+
+    //svr.listen("localhost", 1234);
+
+    return 0;
 }
