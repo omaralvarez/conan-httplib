@@ -17,7 +17,7 @@
 * A sample from `conanfile.txt` in the root directory:
 ```
 [requires]
-httplib/7.2.3@omaralvarez/public-conan
+httplib/0.2.1@omaralvarez/public-conan
 ...
 
 [generators]
