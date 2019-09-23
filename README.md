@@ -1,3 +1,5 @@
+[ ![Download](https://api.bintray.com/packages/omaralvarez/public-conan/httplib%3Aomaralvarez/images/download.svg) ](https://bintray.com/omaralvarez/public-conan/httplib%3Aomaralvarez/_latestVersion)
+
 # conan-httplib
     
 ## Reuse the packages
@@ -17,11 +19,15 @@
 * A sample from `conanfile.txt` in the root directory:
 ```
 [requires]
-httplib/0.2.1@omaralvarez/public-conan
+httplib/0.2.4@omaralvarez/public-conan
 ...
 
 [generators]
 cmake
+...
+
+[options]
+httplib:openssl=True
 ...
 ```
 
@@ -33,6 +39,10 @@ project(project_name CXX)
 if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release)
 endif()
+
+if(WITH_OPENSSL)
+    add_definitions(-DCPPHTTPLIB_OPENSSL_SUPPORT)
+endif(WITH_OPENSSL)
 
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
