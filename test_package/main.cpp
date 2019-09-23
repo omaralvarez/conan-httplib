@@ -19,7 +19,5 @@ int main(void)
 
     std::cout << "Test OK!" << std::endl;
 
-    //svr.listen("localhost", 1234);
-
     return 0;
 }
