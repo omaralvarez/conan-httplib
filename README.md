@@ -6,7 +6,7 @@
 
 ### Basic setup
 
-    $ conan install httplib/0.2.1@omaralvarez/public-conan
+    $ conan install httplib/0.2.4@omaralvarez/public-conan
 
 ### Package basic test
 
