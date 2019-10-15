@@ -6,7 +6,7 @@
 
 ### Basic setup
 
-    $ conan install httplib/0.2.4@omaralvarez/public-conan
+    $ conan install httplib/X.Y.Z@omaralvarez/public-conan
 
 ### Package basic test
 
@@ -19,7 +19,7 @@
 * A sample from `conanfile.txt` in the root directory:
 ```
 [requires]
-httplib/0.2.4@omaralvarez/public-conan
+httplib/X.Y.Z@omaralvarez/public-conan
 ...
 
 [generators]
