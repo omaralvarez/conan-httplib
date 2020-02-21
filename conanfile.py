@@ -3,7 +3,7 @@ from conans import ConanFile, CMake
 
 class httplibConan(ConanFile):
     name = "httplib"
-    version = "0.2.5"
+    version = "0.2.6"
     description = "C++11 header-only HTTP/HTTPS sever library https://github.com/yhirose/cpp-httplib"
     license = "MIT"
     url = "https://github.com/omaralvarez/conan-httplib"
@@ -20,7 +20,7 @@ class httplibConan(ConanFile):
     
     def requirements(self):
         if self.options.openssl:
-            self.requires.add("OpenSSL/1.1.1c@conan/stable")
+            self.requires.add("OpenSSL/1.1.1c")
 
     def _configure_cmake(self):
         cmake = CMake(self)
