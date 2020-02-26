@@ -20,7 +20,7 @@ class httplibConan(ConanFile):
     
     def requirements(self):
         if self.options.openssl:
-            self.requires.add("OpenSSL/1.1.1c")
+            self.requires.add("OpenSSL/1.1.1c@conan/stable")
 
     def _configure_cmake(self):
         cmake = CMake(self)
