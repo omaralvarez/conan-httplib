@@ -3,7 +3,7 @@ from conans import ConanFile, CMake
 
 class httplibConan(ConanFile):
     name = "httplib"
-    version = "0.4.2"
+    version = "0.5.0"
     description = "C++11 header-only HTTP/HTTPS sever library https://github.com/yhirose/cpp-httplib"
     license = "MIT"
     url = "https://github.com/omaralvarez/conan-httplib"
