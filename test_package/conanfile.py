@@ -3,7 +3,7 @@ import os
 
 class httplibTestConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
-    requires = "httplib/0.5.5@omaralvarez/stable"
+    requires = "httplib/0.5.6@omaralvarez/stable"
     generators = "cmake"
 
     def build(self):
